@@ -101,14 +101,12 @@ min_temps = [
 finished_tempsmax = 0
 for temps in max_temps:
     finished_tempsmax = (finished_tempsmax+temps)
-if temps == max_temps[-1]:
-    finished_tempsmax = finished_tempsmax/len(max_temps)
+finished_tempsmax = finished_tempsmax/len(max_temps)
 
 finished_tempsmin = 0
 for temps2 in min_temps:
     finished_tempsmin = (finished_tempsmin+temps2)
-if temps2 == min_temps[-1]:
-    finished_tempsmin = finished_tempsmin/len(min_temps)
+finished_tempsmin = finished_tempsmin/len(min_temps)
     
     ## Alternatively, instead of the length function you could just do 365!
 
@@ -120,7 +118,7 @@ print(f"{round(finished_tempsmin, 1)} degrees is the average low in Laramie in 2
 
 stmin_temps = sorted(min_temps)
 stmax_temps = sorted(max_temps)
-print(f"{stmin_temps[-1]} degrees is the lowest temp in 2023.")
+print(f"{stmin_temps[0]} degrees is the lowest temp in 2023.")
 print(f"{stmax_temps[-1]} degrees is the highest temp in 2023.")
 ## I just set new variables for these because I'm unable to print a list that is sorted(), and then pick a value. 
 ## i.e. print(sorted(min_temps[-1])) will give an error. My assumption is  that the function sorted() is strictly just going to sort it.

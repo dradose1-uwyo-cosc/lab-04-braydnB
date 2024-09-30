@@ -1,6 +1,6 @@
-# Your Name Here
+# Braydn Ballard
 # UWYO COSC 1010
-# Submission Date
+# 09/30/24
 # Lab 03 
 # Lab Section: 
 # Sources, people worked with, help given to: 
@@ -98,8 +98,32 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
+finished_tempsmax = 0
+for temps in max_temps:
+    finished_tempsmax = (finished_tempsmax+temps)
+if temps == max_temps[-1]:
+    finished_tempsmax = finished_tempsmax/len(max_temps)
 
+finished_tempsmin = 0
+for temps2 in min_temps:
+    finished_tempsmin = (finished_tempsmin+temps2)
+if temps2 == min_temps[-1]:
+    finished_tempsmin = finished_tempsmin/len(min_temps)
+    
+    ## Alternatively, instead of the length function you could just do 365!
+
+
+
+
+print(f"{round(finished_tempsmax, 1)} is the average high in Laramie.")
+print(f"{round(finished_tempsmin, 1)} is the average low in Laramie.")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+stmin_temps = sorted(min_temps)
+stmax_temps = sorted(max_temps)
+print(stmin_temps[-1])
+print(stmax_temps[-1])
+## I just set new variables for these because I'm unable to print a list that is sorted(), and then pick a value. 
+## i.e. print(sorted(min_temps[-1])) will give an error.
 

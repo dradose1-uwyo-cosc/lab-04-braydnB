@@ -113,15 +113,15 @@ if temps2 == min_temps[-1]:
     ## Alternatively, instead of the length function you could just do 365!
 
 
-print(f"{round(finished_tempsmax, 1)} is the average high in Laramie.")
-print(f"{round(finished_tempsmin, 1)} is the average low in Laramie.")
+print(f"{round(finished_tempsmax, 1)} degrees is the average high in Laramie in 2023.")
+print(f"{round(finished_tempsmin, 1)} degrees is the average low in Laramie in 2023.")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
 stmin_temps = sorted(min_temps)
 stmax_temps = sorted(max_temps)
-print(stmin_temps[-1])
-print(stmax_temps[-1])
+print(f"{stmin_temps[-1]} degrees is the lowest temp in 2023.")
+print(f"{stmax_temps[-1]} degrees is the highest temp in 2023.")
 ## I just set new variables for these because I'm unable to print a list that is sorted(), and then pick a value. 
-## i.e. print(sorted(min_temps[-1])) will give an error.
+## i.e. print(sorted(min_temps[-1])) will give an error. My assumption is  that the function sorted() is strictly just going to sort it.
 

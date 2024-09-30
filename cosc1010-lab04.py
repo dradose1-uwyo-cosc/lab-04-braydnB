@@ -113,8 +113,6 @@ if temps2 == min_temps[-1]:
     ## Alternatively, instead of the length function you could just do 365!
 
 
-
-
 print(f"{round(finished_tempsmax, 1)} is the average high in Laramie.")
 print(f"{round(finished_tempsmin, 1)} is the average low in Laramie.")
 # For the next part, determine the highest and lowest recorded temperatures.
